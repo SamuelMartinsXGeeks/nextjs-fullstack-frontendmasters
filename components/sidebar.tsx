@@ -94,7 +94,7 @@ const Sidebar = () => {
         <Box marginTop="20px" id="musicmenu">
           <List spacing={2}>
             {musicMenu.map((item) => (
-              <ListItem paddingX="20px" fontSize="14px">
+              <ListItem paddingX="20px" fontSize="14px" key={item.name}>
                 <LinkBox>
                   <NextLink href={item.route} passHref>
                     <LinkOverlay>
