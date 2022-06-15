@@ -22,7 +22,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
           id: user.id,
           time: Date.now(),
         },
-        "hello_secret",
+        "secret_env_key",
         { expiresIn: "8h" }
       );
 
